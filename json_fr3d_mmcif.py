@@ -207,7 +207,7 @@ try:
       ndb_base_pair_list_loop.add_row([str(base_pair_id), str(resa[1]), resulta['asym_id'], resulta['entity_id'], str(resulta['seq_id']), resulta['comp_id'], resulta['PDB_ins_code'], resulta['alt_id'], syma, resultb['asym_id'], resultb['entity_id'], str(resultb['seq_id']), resultb['comp_id'], resultb['PDB_ins_code'], resultb['alt_id'], symb, resa[2], resa[4], resb[2], resb[4]])
 
       # populate _ndb_base_pair_annotation loop; subclass hardcoded to class_1
-      ndb_base_pair_annotation_loop.add_row([str(annotation_id), str(base_pair_id), long_names[fam[0]], long_names[fam[1]], long_names[fam[2]], bp_families[fam], fam, fam+'_'+resa[3]+'_'+resb[3], fam+'_'+resa[3]+'_'+resb[3]+'_1'])
+      ndb_base_pair_annotation_loop.add_row([str(annotation_id), str(base_pair_id), long_names[fam[0]], long_names[fam[1]], long_names[fam[2]], bp_families[fam], fam, fam+'_'+resa[3]+'-'+resb[3], fam+'_'+resa[3]+'-'+resb[3]+'_1'])
     else:
       #print(pair[0]+"_"+pair[2], "already processed", file=sys.stderr)
       pass
